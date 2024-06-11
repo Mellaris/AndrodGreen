@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    app:cardCornerRadius="20dp"
+    android:background="@drawable/element_vertical_list"
+    android:layout_marginTop="22dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/MainText_Black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Заголовок блока"
+            android:textSize="25dp" />
+
+        <TextView
+            style="@style/MainText_BlackSans"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:text="Кратенькое описание блока с двумя строчками"
+            android:textSize="15dp" />
+
+        <Button
+            style="@style/DarkButton"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:height="39dp"
+            android:text="Подробнее" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="151dp"
+        android:layout_height="108dp"
+        android:src="@drawable/ic_feeling_picture"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="28dp"
+
+        />
+
+
+</androidx.cardview.widget.CardView>

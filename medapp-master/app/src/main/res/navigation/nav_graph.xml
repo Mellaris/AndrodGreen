@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/spalshScreen">
+
+    <fragment
+        android:id="@+id/spalshScreen"
+        android:name="com.example.myapplication.SpalshScreen"
+        android:label="fragment_spalsh_screen"
+        tools:layout="@layout/fragment_spalsh_screen" >
+        <action
+            android:id="@+id/action_spalshScreen_to_blankFragment"
+            app:destination="@id/blankFragment" />
+        <action
+            android:id="@+id/action_spalshScreen_to_fragment_Main"
+            app:destination="@id/fragment_Main" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Registration"
+        android:name="com.example.myapplication.fragment_Registration"
+        android:label="fragment_Registration" >
+        <action
+            android:id="@+id/action_fragment_Registration_to_fragmentLogin"
+            app:destination="@id/fragmentLogin" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="com.example.myapplication.FragmentLogin"
+        android:label="FragmentLogin" >
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragment_Registration"
+            app:destination="@id/fragment_Registration" />
+        <action android:id="@+id/action_fragmentLogin_to_fragment_Profile" />
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragment_Main"
+            app:destination="@id/fragment_Main" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.example.myapplication.BlankFragment"
+        android:label="BlankFragment" >
+        <action
+            android:id="@+id/action_blankFragment_to_fragmentLogin"
+            app:destination="@id/fragmentLogin" />
+        <action
+            android:id="@+id/action_blankFragment_to_fragment_Registration"
+            app:destination="@id/fragment_Registration" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Profile"
+        android:name="com.example.myapplication.fragment_Profile"
+        android:label="fragment_Profile" />
+    <fragment
+        android:id="@+id/fragment_Main"
+        android:name="com.example.myapplication.fragment_Main"
+        android:label="fragment_Main" >
+        <action
+            android:id="@+id/action_fragment_Main_to_fragment_Profile"
+            app:destination="@id/fragment_Profile" />
+    </fragment>
+</navigation>
